@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        /* Style for the centered container */
+        .fuckyou{
+            text-align: center;
+        }
+        .button-27 {
+            appearance: none;
+            background-color: #000000;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 200px;
+            will-change: transform;
+            }
+
+            .button-27:disabled {
+            pointer-events: none;
+            }
+
+            .button-27:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+            }
+
+            .button-27:active {
+            box-shadow: none;
+            transform: translateY(0);
+            }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* 80% of viewport height */
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        /* Style for the video element */
+        video {
+            width: 80%; /* 80% of container width */
+            height: 600px;
+            border: 2px solid #3b3939;
+            border-radius: 8px;
+        }
+
+        /* Style for the custom control button */
+ 
+
+        /* Hover effect for the button */
+        button:hover {
+            background-color: #57595c; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <!-- Placeholder for the video element (to be added dynamically) -->
+    <video id="v1" autoplay controls="false">
+        <!-- Video source will be added via JavaScript -->
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- Button to start or pause the video -->
+<div class="fuckyou">
+    <button class="button-27" role="button" onclick="start()">Start</button>
+</div>
+
+<!-- JavaScript to handle video logic -->
+<script src="index.js"></script>
+
+</body>
+</html>
